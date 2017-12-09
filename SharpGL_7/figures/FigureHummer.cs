@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using SharpGL;
 using SharpGL.SceneGraph.Assets;
-using SharpGL_6;
 using SharpGL_6.figures;
 
 namespace SharpGL_7.figures
