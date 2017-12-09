@@ -20,12 +20,12 @@ namespace SharpGL_7.figures
 
         public void Draw(OpenGL gl, float ta, float ty, float tz, float angleX, float angleY, float scale, float z)
         {
-//            _texture.Create(gl, "C:\\Users\\User\\RiderProjects\\SharpGL_7\\SharpGL_7\\files\\Eiche.bmp");
+            _texture.Create(gl, "C:\\Users\\User\\RiderProjects\\SharpGL_7\\SharpGL_7\\files\\ahorn maser.bmp");
             scale = 0.1f * scale;
 
             gl.Translate(ta, ty, tz);
             gl.Scale(scale, scale, scale);
-//            _texture.Bind(gl);
+            _texture.Bind(gl);
             foreach (var polygon in _polygons)
             {
                 gl.Begin(OpenGL.GL_POLYGON);
@@ -33,13 +33,13 @@ namespace SharpGL_7.figures
                 var i = 0;
                 foreach (var points in polygon.list)
                 {
-//                    gl.TexCoord(i == 0 || i == 1 ? 0f : 1f, i == 0 || i == 3 ? 0f : 1f);        
+                    gl.TexCoord(i == 0 || i == 4 ? 0f : 1f, i == 0 || i == 1 ? 0f : 1f);        
                     gl.Vertex(points.Item1, points.Item2, points.Item3);
                     i += 1;
                 }
                 gl.End();
             }
-//            _texture.Destroy(gl);
+            _texture.Destroy(gl);
         }
     }
 }

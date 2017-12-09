@@ -1,0 +1,25 @@
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\bin\Debug\SharpGL_7.exe.config
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\bin\Debug\SharpGL_7.exe
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\bin\Debug\SharpGL_7.pdb
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\bin\Debug\CjClutter.ObjLoader.Loader.dll
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\bin\Debug\SharpGL.dll
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\bin\Debug\SharpGL.SceneGraph.dll
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\bin\Debug\SharpGL.WinForms.dll
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.Form1.resources
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.Properties.Resources.resources
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.exe
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.pdb
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\bin\Debug\SharpGL_7.exe.config
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\bin\Debug\SharpGL_7.exe
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\bin\Debug\SharpGL_7.pdb
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\bin\Debug\SharpGL.dll
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\bin\Debug\SharpGL.SceneGraph.dll
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\bin\Debug\SharpGL.WinForms.dll
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.csprojResolveAssemblyReference.cache
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.Form1.resources
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.Properties.Resources.resources
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.csproj.GenerateResource.Cache
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.exe
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.pdb
