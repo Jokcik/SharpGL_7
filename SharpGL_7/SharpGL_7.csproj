@@ -57,12 +57,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="figures\FigureHummer.cs" />
+    <Compile Include="figures\FigureParallelepiped.cs" />
+    <Compile Include="figures\LoadPrimitive.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Polygon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -89,6 +93,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="files\12387996.jpg" />
+    <Content Include="files\ahorn maser.bmp" />
+    <Content Include="files\Eiche.bmp" />
+    <Content Include="files\set_polosy_linii_tekstura_poverhnost_temnyy_50346_2560x1600.jpg" />
+    <Content Include="files\wg_blurred_backgrounds_6.jpg" />
+    <Content Include="obj_files\Hammer.obj" />
+    <Content Include="obj_files\Mjolnir.obj" />
+    <Content Include="obj_files\sphere.obj" />
+    <Content Include="obj_files\Toilet.obj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

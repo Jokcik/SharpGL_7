@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.IO;
 using ObjLoader.Loader.Loaders;
+using SharpGL_7;
 
 namespace SharpGL_6.figures
 {
