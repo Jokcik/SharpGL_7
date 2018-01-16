@@ -1,15 +1,14 @@
 ﻿using System.Collections.Generic;
 using SharpGL;
 using SharpGL.SceneGraph.Assets;
-using SharpGL_6.figures;
 
 namespace SharpGL_7.figures
 {
-    public class FigureHummer
+    public class FigureSphere
     {
         private readonly List<Polygon> _polygons;
 
-        public FigureHummer()
+        public FigureSphere()
         {
             _polygons = LoadPrimitive.Load(
                 "C:\\Users\\User\\RiderProjects\\SharpGL_7\\SharpGL_7\\obj_files\\sphere.obj");

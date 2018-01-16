@@ -3,7 +3,6 @@ using System.Drawing;
 using System.Windows.Forms;
 using SharpGL;
 using SharpGL.SceneGraph.Primitives;
-using SharpGL_6.figures;
 using SharpGL_7.figures;
 
 namespace SharpGL_7
@@ -16,9 +15,9 @@ namespace SharpGL_7
         }
 
         private readonly FigureParallelepiped _figureKub = new FigureParallelepiped();
-        private readonly FigureHummer _figureHummer1 = new FigureHummer();
-        private readonly FigureHummer _figureHummer2 = new FigureHummer();
-        private readonly FigureHummer _figureHummer3 = new FigureHummer();
+        private readonly FigureSphere _figureHummer1 = new FigureSphere();
+        private readonly FigureSphere _figureHummer2 = new FigureSphere();
+        private readonly FigureSphere _figureHummer3 = new FigureSphere();
 
         private float _angleX;
         private float _angleY;
@@ -40,7 +39,9 @@ namespace SharpGL_7
 
         private readonly float[] _globalAmbient = {0.0f, 0.0f, 0.0f, 1f};
         
-        private float[] _light0Scpecular = {1.0f, 1.0f, 1.0f, 1.0f};
+        private float[] _light0Scpecular = {1.0f, 0f, 0f, 1.0f};
+        private float[] _light1Scpecular = {0f, 0f, 1.0f, 1.0f};
+        private float[] _light2Scpecular = {0f, 1.0f, 0f, 1.0f};
         private float[] _light0Ambient = {0.8f, 0.8f, 0.8f, 1f};
         private float[] _light1Ambient = {0.4f, 0.4f, 0.4f, 1f};
         private float[] _light2Ambient = {0.1f, 0.1f, 0.1f, 1f};
@@ -54,21 +55,24 @@ namespace SharpGL_7
         
         private float[] _sRef = {1.0f, 1.0f, 1.0f, 1.0f};
         private float[] _s0pos = {-0.1f + x1, 0f + y1, -4.0f, 1.0f};
-        private float[] _black = {0f, 0f, 0f, 1f};
+        private float[] _black = {0.5f, 0.5f, 0.5f, 1f};
 
         public void Init()
         {
             try
             {
                 var tbR = int.Parse(textBoxR.Text);
-                var tbG = int.Parse(textBoxR.Text);
-                var tbB = int.Parse(textBoxR.Text);
+                var tbG = int.Parse(textBoxG.Text);
+                var tbB = int.Parse(textBoxB.Text);
 
                 _l0pos = new[] {-0.1f + x1, 0f + y1, -4.0f + z1, 1.0f};
                 _l1pos = new[] {0.2f + x2, 0f + y2, -4.0f + z2, 1.0f};
                 _l2pos = new[] {0.1f + x3, 0.2f + y3, -4.0f, 1.0f};
 
-                _sRef = new[] {tbR / 255f, tbG / 255f, tbB / 255f, 1f};
+//                _sRef = new[] {tbR / 255f, tbG / 255f, tbB / 255f, 1f};
+//                _light0Ambient = new[] {tbR / 255f, tbG / 255f, tbB / 255f, 1f};
+//                _light0Diffuse = new[] {tbR / 255f, tbG / 255f, tbB / 255f, 1f};
+                _light0Scpecular = new[] {tbR / 255f, tbG / 255f, tbB / 255f, 1f};
             }
             catch (Exception e)
             {
@@ -85,7 +89,6 @@ namespace SharpGL_7
             gl.Enable(OpenGL.GL_LIGHTING);
             gl.ClearColor(0.5f, 0.5f, 0.5f, 0.5f);
             
-            gl.Enable(OpenGL.GL_COLOR_MATERIAL);
             gl.Enable(OpenGL.GL_DEPTH_TEST);
             gl.Enable(OpenGL.GL_TEXTURE_2D);
             
@@ -110,17 +113,17 @@ namespace SharpGL_7
             gl.Enable(OpenGL.GL_LIGHT1);
             gl.Enable(OpenGL.GL_LIGHT2);
 
-            gl.LightModel(OpenGL.GL_LIGHT_MODEL_AMBIENT, _black);
+//            gl.LightModel(OpenGL.GL_LIGHT_MODEL_AMBIENT, _black);
             
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_DIFFUSE, _light0Diffuse);
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_AMBIENT, _light0Ambient);
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_SPECULAR, _light0Scpecular);
             gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_DIFFUSE, _light0Diffuse);
             gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_AMBIENT, _light1Ambient);
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPECULAR, _light0Scpecular);
+            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPECULAR, _light1Scpecular);
             gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_DIFFUSE, _light0Diffuse);
             gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_AMBIENT, _light2Ambient);
-            gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_SPECULAR, _light0Scpecular);
+            gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_SPECULAR, _light1Scpecular);
 
             
             gl.LoadIdentity();
@@ -130,7 +133,7 @@ namespace SharpGL_7
             var teapot = new Teapot();
 //            gl.Rotate(_angleX, 1f, 0f, 0f);
 //            gl.Rotate(_angleY, 0f, 1f, 0f);
-            gl.Color(0.5f, 0.5f, 0.1f);
+            gl.Color(0.4f, 0.4f, 0.4f);
             teapot.Draw(gl, 14, 1, OpenGL.GL_FILL);
             gl.ColorMaterial(OpenGL.GL_FRONT_AND_BACK, OpenGL.GL_AMBIENT_AND_DIFFUSE);
             gl.Material(OpenGL.GL_FRONT_AND_BACK, OpenGL.GL_SPECULAR, _sRef);

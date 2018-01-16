@@ -23,3 +23,4 @@ C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.Properties.R
 C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.csproj.GenerateResource.Cache
 C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.exe
 C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\obj\Debug\SharpGL_7.pdb
+C:\Users\User\RiderProjects\SharpGL_7\SharpGL_7\bin\Debug\CjClutter.ObjLoader.Loader.dll

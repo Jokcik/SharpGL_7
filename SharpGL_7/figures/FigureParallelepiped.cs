@@ -1,11 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Drawing;
-using System.Runtime.InteropServices;
-using SharpGL;
+﻿using SharpGL;
 using SharpGL.SceneGraph.Assets;
-using SharpGL.SceneGraph.Primitives;
 
-namespace SharpGL_6.figures
+namespace SharpGL_7.figures
 {
     public class FigureParallelepiped
     {

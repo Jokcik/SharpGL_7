@@ -35,6 +35,9 @@
     <Reference Include="CjClutter.ObjLoader.Loader">
       <HintPath>..\..\..\..\..\RiderProjects\KB_LAB_5\KB_LAB_5\CjClutter.ObjLoader.Loader.dll</HintPath>
     </Reference>
+    <Reference Include="CjClutter.ObjLoader.Loader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>CjClutter.ObjLoader.Loader.dll</HintPath>
+    </Reference>
     <Reference Include="SharpGL">
       <HintPath>.\SharpGL.dll</HintPath>
     </Reference>
@@ -57,7 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="figures\FigureHummer.cs" />
+    <Compile Include="figures\FigureSphere.cs" />
     <Compile Include="figures\FigureParallelepiped.cs" />
     <Compile Include="figures\LoadPrimitive.cs" />
     <Compile Include="Form1.cs">
@@ -95,6 +98,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CjClutter.ObjLoader.Loader.dll" />
     <Content Include="files\12387996.jpg" />
     <Content Include="files\ahorn maser.bmp" />
     <Content Include="files\Eiche.bmp" />
@@ -104,6 +108,7 @@
     <Content Include="obj_files\Mjolnir.obj" />
     <Content Include="obj_files\sphere.obj" />
     <Content Include="obj_files\Toilet.obj" />
+    <Content Include="Лаборатная работа №7 по компьютерной графике.docx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
